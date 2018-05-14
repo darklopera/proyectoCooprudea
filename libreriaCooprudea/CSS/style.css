@@ -1,0 +1,36 @@
+.button-balanced{
+    width: 45%; 
+    background-color: #569D93;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+div{
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.item-input{
+    background-color: #BDD9D3;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.has-header{
+    background-color: #12473F;
+}
+
+.libreriaCooprudea-slide28{
+    background:url(&quot;img/cine.jpeg&quot;)no-repeat center;
+    background-size:cover;
+    color: white;
+}
+
+.titulo-categoria{
+    background-color: #569D93;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+}

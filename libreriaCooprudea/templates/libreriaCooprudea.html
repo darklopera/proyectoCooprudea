@@ -1,0 +1,55 @@
+<ion-view title="Libreria" id="page1">
+    <ion-content padding="true" class="has-header">
+      
+        <div>
+    <img src="img/logo.png">
+        </div>
+
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" options="options" delegate-handle="slider1" id="libreriaCooprudea-slider1" style="width:100%;height:200px;">
+      <ion-slide-page ng-repeat="n in banners">
+        <a>{{n[0]}}</a>
+          <br>
+        <a>{{n[1]}}</a>
+          <br>
+        <a>{{n[2]}}</a>
+      </ion-slide-page>
+    </ion-slides>
+     
+        <!--
+        <ion-slides disable-side-menu-drag="" options="{'loop': true}"  delegate-handle="slider1" id="libreriaCooprudea-slider1" style="width:100%;height:200px;">  
+              
+      <ion-slide-page class="libreriaCooprudea-slide28" style="  background:url(&quot;img/cine2.jpg&quot;) no-repeat center; background-size:cover;color: white; ">
+          <p class="titulo-categoria">CINE</p>
+          </ion-slide-page>
+      <ion-slide-page id="libreriaCooprudea-slide28" style="background:url(&quot;img/biologia.jpg&quot;) no-repeat center;background-size:cover;color: white;">
+           <p class="titulo-categoria">BIOLOGIA</p>
+          </ion-slide-page>
+      <ion-slide-page id="libreriaCooprudea-slide28" style="background:url(&quot;img/economia.jpg&quot;) no-repeat center;background-size:cover;color: white;">
+           <p class="titulo-categoria">ECONOMIA</p>
+          </ion-slide-page>
+      <ion-slide-page id="libreriaCooprudea-slide28" style="background:url(&quot;img/historia.jpg&quot;) no-repeat center;background-size:cover;color: white;">
+            <p class="titulo-categoria">HISTORIA</p>
+          </ion-slide-page>
+    </ion-slides>
+    -->
+        
+      <label class="item item-input">
+        <span class="input-label" >Que estas buscando?</span>
+        <input type="text">
+      </label>
+        
+        <button ui-sref="categorias()" class=" button button-balanced icon ion-android-bulb">
+          Encontrar
+        </button>
+        
+        <div>
+          <button ui-sref="login()"  class="button button-balanced">Iniciar sesion
+            </button>  
+            
+            <button ui-sref="categorias()" class="button button-balanced">Categorias
+            </button>
+     
+    </div>
+
+  </ion-content>
+</ion-view>

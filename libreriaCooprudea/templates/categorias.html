@@ -1,0 +1,57 @@
+<ion-view title="Categorias" id="page5">
+  <ion-content padding="true" class="has-header" scroll="true">
+      
+    <form id="categorias-form10" class="list">
+      <label class="item item-input" id="categorias-search4">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="">
+      </label>
+    </form>
+      
+    <select ng-change='cambiarTipoBusqueda(selectTiposBusqueda[1])' ng-model="selectTiposBusqueda">
+      <option ng-repeat="busquedas in tbusqueda" ng-value="busquedas.id">{{busquedas.tipo}}</option>
+     </select>
+      
+
+      
+    <div id="categorias-button-bar5" class="button-bar">
+      <a ui-sref="listaDeDeseos()" id="categorias-button19" class="button button-balanced button-block">Lista Deseos</a>
+      <button id="categorias-button23" class="button button-balanced button-block" ng-click="buscar()">Buscar</button>
+    </div>
+      
+    <div id="categorias-container5">
+        <form id="categorias-form7" class="list">
+
+            <h3>Busqueda por Categorias</h3>
+            
+    <select ng-change='buscarXcategoria(selectCategorias[0])' ng-model="selectCategorias" >
+      <option  ng-repeat="categorias in rcategorias" ng-value="categorias[0]">{{categorias[1]}}</option>
+    </select>
+    
+        </form>  
+   
+
+    </div>
+      
+      <div class="contenido">
+              
+        <ion-item class="item-thumbnail-left" id="categorias-list-item4">
+            
+            <!--<ion-label  ng-repeat='categorias in libros' ng-click="">-->
+                <div  ng-repeat='categorias in libros' ng-click=""> 
+                 <img src="{{categorias[8]}}">
+                <h2>{{categorias[1]}}</h2>
+                <br>
+                <a>{{categorias[2]}}</a>
+                <br>
+                <a>{{categorias[3]}}</a>
+                <br>
+                <a>{{categorias[7]}}</a>
+                <hr>
+                </div>
+        </ion-item>
+
+      </div>      
+
+  </ion-content>
+</ion-view>
